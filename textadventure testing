@@ -3,7 +3,7 @@ username = str(input("Pick your username"))
 print(f"Nutzername ist {username}" )
 print(f"Hallo {username}, wilkommen im Spiel.")
 def start(): #Klasse Start
-    StartOrExit = int(input("Sarten oder beenden? (1/2)"))
+    StartOrExit = int(input("Starten oder beenden? (1/2)"))
     if StartOrExit == 1:
         def house():    #Haus als neue Klasse
             print("Du wachst Zuhause auf.")  #Story
@@ -22,9 +22,20 @@ def start(): #Klasse Start
                 print("Du fährst mit dem Bus")
             elif wahl == 4:
                 print("Du bleibst zu Hause")
-                def zuhause_bleiben():
+                def zuhause_bleiben():  #Definiton des Hausarrest Endings
                     print(" Deine ELtern sehen dich, und schimpfen dich aus.")
                     print("ENDE: 6 Monate Hausarrest")
+                zuhause_bleiben() #Ausführen
             else:
                 print("error, restart")
-                house()
+                house() #Bei house() neu Anfangen
+        house() #Ausführem
+    elif StartOrExit == 2:
+        print("Tschau Kakao!")
+        exit()
+    else:   #Bei alles anderem außer 1/2
+        print("error")
+        start()
+
+
+start() #Ausführen
