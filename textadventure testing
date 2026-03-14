@@ -1,0 +1,30 @@
+#username als variable mit input
+username = str(input("Pick your username"))
+print(f"Nutzername ist {username}" )
+print(f"Hallo {username}, wilkommen im Spiel.")
+def start(): #Klasse Start
+    StartOrExit = int(input("Sarten oder beenden? (1/2)"))
+    if StartOrExit == 1:
+        def house():    #Haus als neue Klasse
+            print("Du wachst Zuhause auf.")  #Story
+            print("du machst dich fertig und gehst aus dem Haus")
+            print("Wie willst du zur Schule gehen?")
+            print("1-Zu Fuß")    #Entscheidungen
+            print("2-Fahrrad")
+            print("3-Bus")
+            print("4-Zuhause bleiben")
+            wahl = int(input("Wie willst du zur Schule"))
+            if wahl==1:
+                print("du gehst zu Fuß")
+            elif wahl == 2:
+                print("Du fährst mit dem Fahrrad")
+            elif wahl == 3:
+                print("Du fährst mit dem Bus")
+            elif wahl == 4:
+                print("Du bleibst zu Hause")
+                def zuhause_bleiben():
+                    print(" Deine ELtern sehen dich, und schimpfen dich aus.")
+                    print("ENDE: 6 Monate Hausarrest")
+            else:
+                print("error, restart")
+                house()
