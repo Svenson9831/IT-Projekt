@@ -1,5 +1,5 @@
 #username als variable mit input
-username = str(input("Pick your username"))
+username = str(input("Pick your username: "))
 print(f"Nutzername ist {username}" )
 print(f"Hallo {username}, wilkommen im Spiel.")
 def start(): #Klasse Start 
@@ -21,12 +21,12 @@ def start(): #Klasse Start
        \|_________|                                           |\__\
                                                               \|__|
           """)
-    StartOrExit = int(input("Starten oder beenden? (1/2)"))
+    StartOrExit = int(input("Starten oder beenden? (1/2) "))
     if StartOrExit == 1:
         def house():    #Haus als neue Klasse
             print("Du wachst Zuhause auf.")  #Story
             print("du machst dich fertig und gehst aus dem Haus")
-            print("Wie willst du zur Schule gehen?")
+            print("Wie willst du zur Schule gehen? ")
             print(r"""
                        __________
                       ///////////\
