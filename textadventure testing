@@ -44,6 +44,10 @@ def start(): #Klasse Start
                 print("du gehst zu Fuß")
             elif wahl == 2:
                 print("Du fährst mit dem Fahrrad")
+                def fahrrad():
+                    print("Du fährst mit dem Fahrrad zur Schule")
+                fahrrad()
+
             elif wahl == 3:
                 print("Du fährst mit dem Bus")
             elif wahl == 4:
